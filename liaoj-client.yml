@@ -1,0 +1,14 @@
+server:
+  port: 8084  # ${PORT:8080}
+profile: bbb-config
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://172.22.0.6:1112/eureka
